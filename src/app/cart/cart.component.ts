@@ -11,6 +11,7 @@ import { Cream } from '../cream-list/Cream';
 export class CartComponent implements OnInit {
 
   cartList$: Observable<Cream[]>;
+  CreamCartService: any;
 
   constructor(cart: CreamCartService) { 
     this.cartList$ = cart.cartList.asObservable();
@@ -18,5 +19,5 @@ export class CartComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
 }

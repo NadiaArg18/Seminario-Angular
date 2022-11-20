@@ -25,7 +25,4 @@ export class CreamCartService {
     this.cartList.next(this._cartList); //equivalente al emitt de eventos.
   }
 
-  removeCart(): void{
-    this._cartList.splice(0, this._cartList.length);
-  }
 }

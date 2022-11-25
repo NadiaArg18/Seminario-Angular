@@ -1,6 +1,7 @@
 <h3>Compre aquí:</h3>
 <ul>
     <li *ngFor="let cream of cartList$ | async">
-        {{cream.quantity}} {{cream.name}} = {{(cream.price  * cream.quantity) | currency}}
+        {{cream.quantity}} {{cream.name}} = {{(cream.price * cream.quantity) | currency}}
     </li>
 </ul>
+

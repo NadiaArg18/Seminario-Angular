@@ -27,6 +27,7 @@ export class CreamListComponent implements OnInit {
     cream.stock -= cream.quantity;
     cream.quantity = 0;
   }
+  
   maxReached(m: string) {
     alert(m);
   }
